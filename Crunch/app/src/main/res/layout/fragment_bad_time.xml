@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginRight="50dp"
+              android:layout_marginTop="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/option_repeat"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/next_button"
+            android:layout_toEndOf="@+id/startSetDialog"
+            android:layout_toRightOf="@+id/startSetDialog"
+            android:text="Repeat every day"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ToggleButton
+                android:id="@+id/sunday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOn="S"
+                android:textOff="S"
+               />
+
+            <ToggleButton
+                android:id="@+id/monday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOn="M"
+                android:textOff="M"/>
+
+            <ToggleButton
+                android:id="@+id/tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOn="T"
+                android:textOff="T"/>
+
+            <ToggleButton
+                android:id="@+id/wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOn="W"
+                android:textOff="W"/>
+
+            <ToggleButton
+                android:id="@+id/thursday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOn="T"
+                android:textOff="T"/>
+
+            <ToggleButton
+                android:id="@+id/friday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOn="F"
+                android:textOff="F"/>
+
+            <ToggleButton
+                android:id="@+id/saturday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOn="S"
+                android:textOff="S"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

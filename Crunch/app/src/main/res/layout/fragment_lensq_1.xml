@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:layout_marginTop="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Hi, I'm Munch."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="I’m so excited to work with you to crunch your old habit."
+            android:textAlignment="center"
+            android:textSize="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="To start, what habit do you want to break?"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            />
+
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/habit_setup_title"/>
+
+        <EditText
+            android:id="@+id/bad_habit_short"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="16dp"
+            android:hint="e.g. eating sweets every day"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In more detail:"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/bad_habit_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="16dp"
+            android:hint="e.g. chocolate chip cookies at Sweet Stop"
+            />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Difficulty from 1 to 10"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/bad_habit_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="16dp"
+            android:hint="e.g. 3"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/next_button"
+            android:text="@string/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/arrow_right"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+include ':app', ':ParseLoginUI', ':samples:SwitchUserSample', ':samples:Scrumptious',
+        ':samples:RPSSample', ':samples:MessengerSendSample', ':samples:HelloFacebookSample',
+        ':samples', ':library', ':pager'

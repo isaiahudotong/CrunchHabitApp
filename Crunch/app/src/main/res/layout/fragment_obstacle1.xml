@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:layout_marginTop="16dp" android:background="@color/orange">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="By predicting the obstacles we may encounter, we'll have a higher change of reaching success with our goal."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Some obstacles I may face include:"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/obstacle_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="16dp"
+            android:hint="e.g. peer pressure from friends to eat icecream"
+            android:textAlignment="center"
+            />
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:text="@string/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/arrow_right"/>
+
+    </LinearLayout>
+</LinearLayout>

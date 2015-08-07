@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/White"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/creationflow4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/OrangeRed"
+        android:gravity="center"
+        android:text="Why are you motivated?"
+        android:textSize="25dp"
+        />
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:orientation="vertical"
+                  android:background="@drawable/monkey_board"
+                  android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/motivation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/RosyBrown"
+        android:gravity="center"
+        android:textColorHint="@color/RosyBrown"
+        android:hint="e.g. I will be stronger mentally and physically."
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:id="@+id/motivation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="@color/RosyBrown"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/RosyBrown"
+        android:gravity="center"
+        android:hint="e.g. This summer is the summer to get fit."
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/motivation3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:textColorHint="@color/RosyBrown"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/RosyBrown"
+        android:gravity="center"
+        android:hint="e.g. I deserve to be happy and healthy."
+        android:textColor="@color/Black"
+        android:textSize="18dp">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/Coral"
+        android:text="I&apos;m ready for change."
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="18dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+

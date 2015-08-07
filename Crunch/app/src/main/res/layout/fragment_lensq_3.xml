@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+              android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Let's identify what emotions trigger your bad habit."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How I feel before my bad habit:"
+            android:textSize="20dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <EditText
+            android:id="@+id/bad_emotion_before"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:hint="e.g. tired" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How I feel after my bad habit:"
+            android:textSize="20dp"
+             />
+
+        <EditText
+            android:id="@+id/bad_emotion_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="15dp"
+            android:hint="e.g. cheerful" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:text="@string/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/research_bad_habit_location_time" />
+
+</LinearLayout>

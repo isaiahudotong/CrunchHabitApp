@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="layers_array">
+        <item>Home</item>
+        <item>Cues</item>
+        <item>Calendar</item>
+        <item>Challenges</item>
+        <item>Settings</item>
+    </string-array>
+
+    <array name="ns_menu_items_icon">
+        <item>ic_action_settings</item>
+        <item>ic_save</item>
+        <item>action_add</item>
+        <item>ic_launcher_</item>
+        <item>action_add</item>
+        <item>ic_action_settings</item>
+        <item>ic_launcher_</item>
+    </array>
+
+</resources>

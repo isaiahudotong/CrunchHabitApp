@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/White"
+              android:weightSum="1">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/creationflow1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/OrangeRed"
+        android:gravity="center"
+        android:text="What type of habit is this?"
+        android:textSize="25dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Trending Categories"
+        android:textSize="18dp"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="4">
+
+
+        <ImageButton
+            android:id="@+id/exercise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_cate1"
+            />
+
+        <ImageButton
+            android:id="@+id/nutrition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_cate2"
+            android:textOff="M"
+            android:textOn="M"/>
+
+        <ImageButton
+            android:id="@+id/learning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_cate3"/>
+
+
+        <ImageButton
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_cate4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Exercise"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Nutrition"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Learning"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:text="Lifestyle"
+            android:textSize="14dp"
+            />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Hashtag the Habit"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:hint="#late #procrastination"
+        android:textSize="18dp"
+        />
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Coral"
+        android:text="Let's move forward"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_below="@+id/bad_habit_short"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
+
+

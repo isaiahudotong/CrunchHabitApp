@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_height="match_parent"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp"
+             android:descendantFocusability="beforeDescendants"
+             android:layout_width="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@drawable/selector_card_background"
+                    android:descendantFocusability="afterDescendants">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent"
+              android:background="@drawable/monkey_friends"
+              android:orientation="vertical"
+
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/Coral"
+        android:gravity="center"
+        android:text="Welcome to"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/Coral"
+        android:gravity="center"
+        android:text="Crunch World"
+        android:textSize="30dp"
+        />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+
+                  android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/reasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:text="Explore habits others are crunching. \n Inspire others and inspire yourself."
+            android:textSize="18dp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

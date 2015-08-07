@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_menu_add"
+        android:title="@string/new_habit"
+        android:text="make new habit"
+        app:showAsAction="ifRoom|withText"
+        />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:title="Refresh"
+        android:text="refresh"
+        app:showAsAction="ifRoom|withText"
+        />
+
+    <item
+        android:id="@+id/action_favorites"
+        android:title="Favorites"
+        android:text="favorites"
+        app:showAsAction="ifRoom|withText"
+        />
+
+
+</menu>

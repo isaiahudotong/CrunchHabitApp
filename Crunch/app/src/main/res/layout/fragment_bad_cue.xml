@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/White"
+                android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/creationflow2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/OrangeRed"
+        android:text="What triggers your habit?"
+        android:id="@+id/textView10"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:text=
+            "Choose cues that tell your brain to initiate your bad habit."
+        android:id="@+id/textView7"
+        android:gravity="center"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center"
+            android:rowCount="2"
+
+            >
+
+            <Button
+                android:id="@+id/where"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/where"
+                 />
+            <Button
+                android:id="@+id/when"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/clock"
+                 />
+            <Button
+                android:id="@+id/withWho"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/who"
+                 />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/heart"
+                android:id="@+id/feels"
+                 />
+        </GridLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Coral"
+        android:text="Continue"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_below="@+id/bad_habit_short"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+
+</LinearLayout>

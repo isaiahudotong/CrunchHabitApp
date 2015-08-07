@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff3c3c3c">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/microscope"
+            android:id="@+id/imageView3"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/White"
+        android:layout_height="match_parent">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identifying the Cues"
+        android:textSize="25dp"
+        android:fontFamily="sans-sarif"
+        android:textStyle="bold"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:text="We&apos;ll now figure out the cues that trigger your habit such as your location, the time, who you&apos;re with, or your emotion."
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textColor="@color/Black"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Let's dive into a lens"
+        android:layout_marginTop="15dp"
+        android:id="@+id/start"
+        android:background="#ff5bcbbb"
+        android:textColor="@color/Black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView8"/>
+    </RelativeLayout>
+
+</LinearLayout>

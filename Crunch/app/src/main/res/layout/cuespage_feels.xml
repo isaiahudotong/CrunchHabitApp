@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/magnify_big"
+    >
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="0dp"
+        android:paddingBottom="0dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="5"
+        android:text="Return"
+        android:textColor="@color/White"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageView1"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/feeling_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="During my bad habit I feel:"
+        android:textColor="@color/background_color"
+        android:textSize="30dp"
+        android:layout_x="10dp"
+        android:layout_y="98dp"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/feeling_title"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/feeling_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emotion"
+        android:textColor="@color/background_color"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_above="@+id/imageView1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@drawable/bun_angry"
+        android:layout_x="57dp"
+        android:layout_y="244dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@drawable/bun_embarassed"
+        android:layout_x="57dp"
+        android:layout_y="244dp"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignStart="@+id/imageView1" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@drawable/bun_excited"
+        android:visibility="invisible"
+        android:layout_x="57dp"
+        android:layout_y="244dp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignStart="@+id/imageView1" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:visibility="invisible"
+        android:background="@drawable/bun_happy"
+        android:layout_below="@+id/feeling_title"
+        android:layout_alignStart="@+id/imageView1" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@drawable/bun_sad"
+        android:visibility="invisible"
+        android:layout_below="@+id/feeling_title"
+        android:layout_alignStart="@+id/imageView1" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@drawable/bun_sleepy"
+        android:visibility="invisible"
+        android:layout_below="@+id/feeling_title"
+        android:layout_alignStart="@+id/imageView1" />
+
+</RelativeLayout>

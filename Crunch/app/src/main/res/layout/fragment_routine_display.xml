@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#8fffe5e6"
+              android:weightSum="1">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/background_color"
+        android:gravity="center"
+        android:text="My Plan"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/habit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.04"
+        android:background="#c1ff4f42"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="I will eat celery at 3PM each day."
+        android:textSize="18dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/background_color"
+        android:gravity="center"
+        android:text="Reasons"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/reasons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.04"
+        android:background="#c1ff4f42"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginBottom="15dp"
+        android:text="I want to be healthy this summer."
+        android:textSize="18dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/calendar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/orange"
+        android:onClick="CalendarPage"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:text="Check Calendar!"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/background_color"
+        android:gravity="center"
+        android:text="Obstacles"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/obstacles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.04"
+        android:background="#c1ff4f42"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginBottom="15dp"
+        android:text="There may be no more vegetables in the kitchen."
+        android:textSize="18dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/background_color"
+        android:gravity="center"
+        android:text="Motivation"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/motivation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.04"
+        android:background="#c1ff4f42"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginBottom="15dp"
+        android:text="You can do it, you know you want to eat healthy!"
+        android:textSize="18dp"/>
+
+</LinearLayout>
+
+

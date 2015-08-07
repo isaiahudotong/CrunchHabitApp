@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/GridLayout1"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ChallengeActivity"
+                android:clipChildren="false">
+
+    <View android:id="@+id/dummyView"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_centerInParent="true"/>
+
+
+    <FrameLayout
+        android:background="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_challenge"
+        android:id="@+id/my_habit"
+        android:layout_alignBottom="@id/dummyView"
+        android:layout_gravity="center_horizontal">
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:background="@color/coral"
+        tools:layout="@layout/fragment_challenge_friend"
+        android:id="@+id/friend_habit"
+        android:layout_width="match_parent"
+        android:layout_alignTop="@id/dummyView"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+    </FrameLayout>
+
+</RelativeLayout>

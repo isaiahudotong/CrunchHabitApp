@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+              android:orientation="vertical"
+                android:layout_height="fill_parent">
+
+    <ScrollView android:id="@+id/ScrollView01"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/White"
+            android:layout_height="match_parent">
+
+
+            <ImageView android:layout_width="100dp"
+                       android:src="@drawable/circle1"
+                       android:layout_gravity="center"
+                       android:layout_centerHorizontal="true"
+                       android:layout_alignParentStart="true"
+                       android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/White"
+                android:id="@+id/relativeLayout3">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/habit_title"
+                    android:layout_height="wrap_content"
+                    android:text="I need to make a habit!"
+                    android:textColor="@color/Coral"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#ff11b7e2"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/relativeLayout4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Progress"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:id="@+id/textView31"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/clouds"/>
+                <FrameLayout
+                    android:name="eie.android.crunch.ProgressBarFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progress_bar"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/Coral"
+                android:layout_below="@+id/relativeLayout4"
+                android:id="@+id/relativeLayout5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Did you do your habit?"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:id="@+id/textView14"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="2"
+                    >
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/yes"
+                    android:id="@+id/yesbutton"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"/>
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/no"
+                        android:id="@+id/nobutton"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/demo_progress"
+                    android:background="@drawable/heart_on"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#c1ff4f42"
+            android:layout_below="@+id/relativeLayout6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout40">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You do or do not, there is no try. "
+                android:textStyle="italic"
+                android:textColor="@color/White"
+                android:layout_marginTop="40dp"
+
+                android:textSize="25dp"
+
+                android:layout_marginBottom="10dp"
+
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspiration of the Day"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:id="@+id/textView30"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+</LinearLayout>

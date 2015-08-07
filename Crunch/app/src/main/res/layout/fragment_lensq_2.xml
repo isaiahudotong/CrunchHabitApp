@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:layout_marginTop="16dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="I'm so proud that you want to crunch that habit."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    // need to say the specific habit from before via @string/bad_habit
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="What triggers you to do your bad habit?"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I do my bad habit because I"/>
+
+    <EditText
+        android:id="@+id/bad_what_trigger_short"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="16dp"
+        android:hint="e.g. no time buy salad"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In more detail:"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/bad_what_trigger_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="16dp"
+        android:hint="e.g. chocolate chip cookies at Sweet Stop"
+        />
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:text="@string/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:drawablePadding="4dp"
+        android:drawableRight="@drawable/arrow_right"/>
+
+</LinearLayout>

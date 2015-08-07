@@ -1,0 +1,125 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CrunchMainActivity">
+
+
+
+
+    <!-- The main content view -->
+
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".CrunchActivity"
+        android:background="@drawable/blue_background">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crunch_home"
+            android:id="@+id/textView2"
+            android:textColor="@color/caldroid_white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+           />
+
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/caldroid_white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2">
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/cheat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_button"
+            android:layout_alignTop="@+id/action_new"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="@string/next_button"
+            android:layout_alignParentBottom="true"
+           />
+
+        <ImageButton
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:contentDescription="@string/previous_button"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_button"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+             />
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:text="@string/true_button"
+            android:layout_alignParentBottom="true"
+
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+
+
+    <RelativeLayout
+        android:layout_width="10dp"
+        android:layout_height="20dp">
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+

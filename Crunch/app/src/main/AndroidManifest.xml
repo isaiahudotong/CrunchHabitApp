@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="eie.android.crunch"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="in.wptrafficanalyzer.locationactionbarcompatsearchviewv2.permission.MAPS_RECEIVE"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <permission
+        android:name="eie.android.crunch.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <permission
+        android:name="in.wptrafficanalyzer.locationactionbarcompatsearchviewv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <application
+        android:name=".CrunchApplication"
+        android:icon="@drawable/ic_launcher"
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        >
+
+
+        <uses-library android:name="com.google.android.maps" />
+       <activity android:name=".HabitListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.Activity"/>
+        </activity>
+
+        <activity
+            android:name=".ChallengePage"
+            android:label="Challenge"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyThemeTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eie.android.crunch.EachHabitPage" />
+        </activity>
+
+        <service android:name="com.parse.PushService"/>
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+
+                <category android:name="eie.android.crunch"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"/>
+                <action android:name="com.parse.push.intent.DELETE"/>
+                <action android:name="com.parse.push.intent.OPEN"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".CuesDisplayPage"
+            android:label="@string/title_activity_cues_display_page"
+            android:theme="@style/MyThemeTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".EachHabitPage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EachHabitPage"/>
+        </activity>
+
+
+        <activity
+            android:name=".GraphActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".HabitListActivity">
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="@string/app_name"
+           >
+        </activity>
+        <activity
+            android:name=".CrunchMainActivity"
+            android:label="Crunch"
+            />
+
+        <provider
+            android:name=".PlaceProvider"
+            android:authorities="in.wptrafficanalyzer.locationactionbarcompatsearchviewv2.PlaceProvider"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBwUOYqj54UIXf48lfPLQ36ntr73Enqmw4"/>
+        <activity
+            android:name=".NewIndividualHabitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyThemeTheme"
+            android:label="Make a new habit"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <!-- Points to searchable activity -->
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".NewIndividualHabitActivity"/>
+            <!-- Points to searchable meta data -->
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote"/>
+
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DispatchActivity">
+        </activity>
+        <activity
+            android:name=".EachHabitPage"
+            android:screenOrientation="portrait"
+            android:label="EachHabitPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".PostActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/activity_post_title"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_settings" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="eie.android.crunch.MapsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_maps" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider907454049325461"
+            android:exported="true" />
+        <activity
+            android:name="com.parse.ui.ParseLoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/MyThemeTheme"
+            android:launchMode="singleTop">
+            <!-- For more options, see https://www.parse.com/docs/android_guide#ui-login -->
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:value="true" />
+            <meta-data
+                android:name="com.facebook.sdk.ApplicationName"
+                android:value="@string/app_name" />
+
+
+
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_EMAIL_AS_USERNAME"
+                android:value="true" />
+
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.FACEBOOK_LOGIN_ENABLED"
+                android:value="true"/>
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.FACEBOOK_LOGIN_PERMISSIONS"
+                android:resource="@array/my_facebook_permissions"/>
+        </activity>
+
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="BnTP6MXyhpdhba9pMDw7KD9lrpraSlczO1LGI9nG"/>
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="GpitdT0RlxyDFBzXxNwIFZGusjJyoCSrp6GH1JAD"/>
+
+
+        <activity android:name=".IntroductionActivity"
+                  android:screenOrientation="portrait"
+                  android:label="Intro">
+        </activity>
+        <activity android:name=".LaunchingActivity"
+                  android:screenOrientation="portrait"
+                  android:label="Crunch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".UserListActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="portrait"
+            android:label="UserList">
+        </activity>
+    </application>
+</manifest>

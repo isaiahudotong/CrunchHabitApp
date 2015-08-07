@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/White"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/creationflow1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/Coral"
+        android:gravity="center"
+        android:text="Why do you think you do this habit?"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Reasons why I do my habit:"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:textColor="@color/Black"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView11"
+        />
+
+
+    <EditText
+        android:id="@+id/reward_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/Black"
+        android:hint="e.g. calms me down, makes me feel good"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Black"
+        android:autoText="false" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@color/Coral"
+        android:text="Continue"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</LinearLayout>

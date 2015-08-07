@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Crunch.iml" filepath="$PROJECT_DIR$/Crunch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Crunch.iml" filepath="$PROJECT_DIR$/Crunch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/HelloFacebookSample/HelloFacebookSample.iml" filepath="$PROJECT_DIR$/samples/HelloFacebookSample/HelloFacebookSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/MessengerSendSample/MessengerSendSample.iml" filepath="$PROJECT_DIR$/samples/MessengerSendSample/MessengerSendSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParseLoginUI/ParseLoginUI.iml" filepath="$PROJECT_DIR$/ParseLoginUI/ParseLoginUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/RPSSample/RPSSample.iml" filepath="$PROJECT_DIR$/samples/RPSSample/RPSSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/Scrumptious/Scrumptious.iml" filepath="$PROJECT_DIR$/samples/Scrumptious/Scrumptious.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/SwitchUserSample/SwitchUserSample.iml" filepath="$PROJECT_DIR$/samples/SwitchUserSample/SwitchUserSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menulibrary/library.iml" filepath="$PROJECT_DIR$/menulibrary/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pager/pager.iml" filepath="$PROJECT_DIR$/pager/pager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pager/pager.iml" filepath="$PROJECT_DIR$/pager/pager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pager/pager.iml" filepath="$PROJECT_DIR$/pager/pager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/samples.iml" filepath="$PROJECT_DIR$/samples/samples.iml" />
+    </modules>
+  </component>
+</project>

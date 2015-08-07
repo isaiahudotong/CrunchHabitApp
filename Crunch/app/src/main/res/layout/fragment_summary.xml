@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/White"
+              android:weightSum="1">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/creationflow5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/OrangeRed"
+        android:gravity="center"
+        android:text="Let the crunching unfold"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:text=
+            "You're awesome. Great work on creating a solid habit!"
+        android:id="@+id/textView7"
+        android:gravity="center"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="I will do my habit for"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:textColor="@color/Black"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        android:id="@+id/textView11"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/Black"
+        android:hint="e.g. 25, 40, 60 "
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:backgroundTint="@color/Black"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/textView23" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="days"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:textColor="@color/Black"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        android:id="@+id/textView23"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Coral"
+        android:text="Ready, set, CRUNCH!"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_below="@+id/bad_habit_short"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

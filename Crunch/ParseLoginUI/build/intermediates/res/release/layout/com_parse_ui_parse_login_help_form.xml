@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/White"
+    >
+
+    <TextView
+        android:id="@+id/login_help_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.TextView"
+        android:textColor="#00CCCC"
+        android:gravity="center"
+        android:text="@string/com_parse_ui_login_help_instructions" />
+
+    <EditText
+        android:id="@+id/login_help_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/com_parse_ui_xlarge_vertical_spacing"
+        android:hint="@string/com_parse_ui_login_help_email_input_hint"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/Black"
+        android:backgroundTint="@color/Black"
+        android:inputType="textEmailAddress">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/login_help_submit"
+        style="@style/ParseLoginUI.Button"
+        android:layout_marginTop="@dimen/com_parse_ui_xlarge_vertical_spacing"
+        android:text="@string/com_parse_ui_login_help_submit_button_label"
+        android:background="#00CCCC"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
+<!-- From: file:/Users/emilyw/fbandroid-git/facebook-university/Group_EIE/Crunch/ParseLoginUI/res/layout/com_parse_ui_parse_login_help_form.xml -->
