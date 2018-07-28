@@ -23,3 +23,5 @@ Contributing
 Please fork this repository and contribute back using pull requests.
 
 Any contributions, large or small, major features, bug fixes, unit/integration tests are welcomed and appreciated but will be reviewed and discussed. 
+
+{<img src='https://www.codetriage.com/isaiahudotong/crunchhabitapp/badges/users.svg' alt='Open Source Helpers' />}[https://www.codetriage.com/isaiahudotong/crunchhabitapp]
