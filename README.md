@@ -18,3 +18,8 @@ Fix database tagging
 random crash on Obstacles page,
 Like count
 Enable ability to save habits that have been completed
+
+Contributing
+Please fork this repository and contribute back using pull requests.
+
+Any contributions, large or small, major features, bug fixes, unit/integration tests are welcomed and appreciated but will be reviewed and discussed. 
